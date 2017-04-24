@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<audio src="media.mp3" controls></audio>
+	<script>
+		var n = 5;
+		setInterval(function(){
+			n--;
+			if(n===0){
+				document.querySelector('audio').play();
+			}
+		},1000)
+	</script>
+</body>
+</html>
